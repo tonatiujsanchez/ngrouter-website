@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="header__container bd-container">
+    <a [routerLink]="['/home']" class="header__logo">RUTAS</a>
+    <div class="bd-container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a routerLinkActive="active" [routerLink]="['/home']" class="nav__link">home</a></li>
+          <li><a routerLinkActive="active" [routerLink]="['/blog']" class="nav__link">blog</a></li>
+          <li><a routerLinkActive="active" [routerLink]="['/info']" class="nav__link">info</a></li>
+          <li><a routerLinkActive="active" [routerLink]="['/about']" class="nav__link">about</a></li>
+          <li><a routerLinkActive="active" [routerLink]="['/contact']" class="nav__link">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="social">
+        <ul class="social__list">
+            <li><a href="#"><i class='bx bxl-instagram social__link'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter social__link'></i></a></li>
+            <li><a href="#"><i class='bx bxl-facebook social__link'></i></a></li>
+        </ul>
+    </div>
+  </div>
+</header>

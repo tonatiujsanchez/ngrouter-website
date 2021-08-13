@@ -1,0 +1,53 @@
+/* === === Header === === */
+.header{
+    padding: 24px;
+    background-color: #FFF;
+    box-shadow: 0 2px 2px rgba(51, 51, 51, .1);
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    font-weight: 700;
+    font-size: 22px;
+}
+/* Navegacion */
+.nav{
+    text-align: center;
+}
+.nav__list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.nav__link{
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    font-size: 14px;
+    transition: .3s border-bottom;
+}
+.nav__link:hover{
+    border-bottom: 2px solid #333;
+}
+.nav__link.active{
+    border-bottom: 2px solid #333;
+}
+
+/* Social media */
+.social__list{
+    display: flex;
+    gap: 16px;
+}
+.social__link{
+    font-size: 20px;
+    cursor: pointer;
+}
+.social__link:hover{
+    transform: scale(1.2)
+}

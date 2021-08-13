@@ -1,0 +1,48 @@
+/*=== === === Desarooladores === === === */
+.desarrolladores{
+    margin-bottom: 80px;
+}
+.desarrolladores__container{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.desarrolladores__content{
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+.desarrolladores__content:hover .desarrolladores__info{
+    transform: translateY(0);
+}
+
+.desarrolladores__info{
+    background-color: #222;
+    color: #FFF;
+    text-align: center;
+    padding: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: .4s transform;
+}
+.desarrolladores__name{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.desarrolladores__perfil{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.desarrolladores__social__list{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.desarrolladores__social__link{
+    color: #FFF;
+    font-size: 16px;
+}

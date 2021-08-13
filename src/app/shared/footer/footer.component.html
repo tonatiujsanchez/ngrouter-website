@@ -1,0 +1,16 @@
+<footer class="footer">
+    <div class="footer__container bd-container">
+      <div class="footer__content">
+        <p class="footer__logo">rutas</p>
+      </div>
+      <div class="footer__content">
+        <div class="footer__buttons">
+          <button (click)="onNavigate('/home')" [ngClass]="{'active': getActive('/home') }" class="footer__button">home</button>
+          <button (click)="onNavigate('/blog')" [ngClass]="{'active': getActive('/blog')}" class="footer__button">blog</button>
+          <button (click)="onNavigate('/info')" [ngClass]="{'active': getActive('/info') }" class="footer__button">info</button>
+          <button (click)="onNavigate('/about')" [ngClass]="{'active': getActive('/about')}" class="footer__button">about</button>
+          <button (click)="onNavigate('/contact')" [ngClass]="{'active': getActive('/contact')}" class="footer__button">cantact</button>
+        </div>
+      </div>
+    </div>
+</footer>
