@@ -1,6 +1,6 @@
 /*=== === === Desarooladores === === === */
 .desarrolladores{
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 .desarrolladores__container{
     grid-template-columns: repeat(3, 1fr);

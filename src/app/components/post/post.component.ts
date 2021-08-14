@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router  } from '@angular/router';
 
 @Component({
   selector: 'app-post',
@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PostComponent implements OnInit {
   idPost!: string;
+
   constructor( private activatedRoute: ActivatedRoute ) { 
     this.activatedRoute.params.subscribe(({idPost})=>{
       this.idPost = idPost;
