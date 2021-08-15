@@ -68,4 +68,5 @@ img{
     background-color: #333;
     color: #FFF;
     padding: 16px 24px;
+    cursor: pointer;
 }

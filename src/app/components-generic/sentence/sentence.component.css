@@ -1,0 +1,15 @@
+.sentence{
+    position: relative;
+}
+.sentence__text{
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+}
+.centence__bg{
+    color: #EEE;
+    font-size: 80px;
+    font-weight: 700;
+}

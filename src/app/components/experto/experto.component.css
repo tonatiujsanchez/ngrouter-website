@@ -1,0 +1,53 @@
+.experto{
+    margin-top: 80px;
+}
+.experto__content{
+    grid-template-columns: repeat(2, 1fr);
+}
+.experto__name{
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.experto__cargo{
+    font-weight: 500;
+    color: #777;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.experto__desc{
+    line-height: 27px;
+    text-align: justify;
+}
+
+.experto__detalles{
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+.experto__nav{
+    text-align: center;
+    margin-top: 40px;
+}
+.experto__nav__list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.experto__nav__link{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.experto__nav__link:hover{
+    font-weight: 700;
+}
+.experto__nav__link.active{
+    font-weight: 700;
+}
+
+
+
+.experto__detalles__container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

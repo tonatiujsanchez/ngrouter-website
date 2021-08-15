@@ -7,12 +7,26 @@ import { InfoComponent } from './components/info/info.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BlogComponent } from './components/blog/blog.component';
+
 import { PostComponent } from './components/post/post.component';
+import { ExpertoComponent } from './components/experto/experto.component';
+
+// Chiildren
+import { ProyectosComponent } from './experto-detalles/proyectos/proyectos.component';
+import { ArticulosComponent } from './experto-detalles/articulos/articulos.component';
+import { ExperienciaComponent } from './experto-detalles/experiencia/experiencia.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent},
   { path: 'info', component: InfoComponent},
+  { path: 'experto/:idExperto', component: ExpertoComponent,
+    children:[
+      { path: 'proyectos', component: ProyectosComponent },
+      { path: 'articulos', component: ArticulosComponent },
+      { path: 'experiencia', component: ExperienciaComponent }
+    ]
+  },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'blog', component: BlogComponent },

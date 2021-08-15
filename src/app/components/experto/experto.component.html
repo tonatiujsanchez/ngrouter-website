@@ -1,0 +1,25 @@
+<section class="experto section bd-container">
+    <div class="experto__content bd-grid">
+        <div class="experto__img">
+            <img src="../../../assets/img/experto-{{ idExpert }}.jpg" alt="Foto de un experto en desarrollo web">
+        </div>
+        <div class="experto__date">
+            <h1 class="experto__name"><span>Hola soy </span>Herman Fisher</h1>
+            <p class="experto__cargo">Full stack web developer - {{ idExpert }}</p>
+            <p class="experto__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, nostrum eligendi? Id vero iste praesentium numquam voluptate, nemo totam porro pariatur et nesciunt temporibus fugiat aperiam atque possimus fugit! Soluta accusamus quae neque quisquam dignissimos, modi dolore, eius magnam unde ratione molestias doloribus. Quos consectetur reiciendis labore itaque distinctio placeat, vitae adipisci eius rerum assumenda illo deserunt vel repellat, exercitationem harum quasi! Dolore saepe consectetur, aliquam esse, blanditiis unde ipsam asperiores tempore velit aliquid ratione. Non obcaecati, id consectetur, totam, architecto facere dicta modi voluptas nulla molestias deserunt. Sunt.</p>
+        </div>
+    </div>
+    <div class="experto__detalles">
+        <h2 class="section-title">Más sobre mi</h2>
+        <div class="experto__nav">
+            <ul class="experto__nav__list">
+                <li><a routerLinkActive="active" routerLink="proyectos" class="experto__nav__link">proyectos</a></li>
+                <li><a routerLinkActive="active" routerLink="articulos" class="experto__nav__link">articulos</a></li>
+                <li><a routerLinkActive="active" routerLink="experiencia" class="experto__nav__link">experiencia</a></li>
+            </ul>
+        </div>
+        <div class="experto__detalles__container">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</section>
