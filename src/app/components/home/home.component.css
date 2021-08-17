@@ -1,12 +1,14 @@
 .home__hero{
     background: url('../../../assets/img/hero-home-bg.jpg');
-    height: 600px;
+    height: 570px;
+    margin-bottom: 120px;
 }
 .home__hero__container{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
 }
 /* Image */
 .home__hero__img{
@@ -26,15 +28,117 @@
 .home__hero__name{
     position: absolute;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 40px;
+    top: 50%;
 }
 .home__hero__name__bg{
     font-weight: 700;
-    font-size: 72px;
+    font-size: 80px;
     color: #ccccccaa;
 }
 .home__hero__data__desc{
     line-height: 27px;
     font-weight: 500;
     font-size: 17px;
+}
+/* SOBRE MI */
+.sobre-mi{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 120px;
+}
+
+/* Sobre mi - Image */
+.sobre-mi__img__container{
+    position: relative;
+    width: 400px;
+    height: 520px;
+}
+.sobre-mi__triangulo{
+    width: 0;
+    height: 0;
+    border-right: 70px solid transparent;
+    border-top: 70px solid transparent;
+    border-left: 70px solid #333;
+    border-bottom: 70px solid #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.sobre-mi__img_primary{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+.sobre-mi__img_secondary{
+    position: absolute;
+    width: 150px;
+    right: 0;
+    bottom: 0;
+    border-top: 8px solid #FFF;
+    border-left: 8px solid #FFF;
+}
+.sobre-mi__anios_experiancia{
+    text-align: center;
+    background-color: #333;
+    color: #FFF;
+    padding: 32px 20px;
+    width: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sobre-mi__anios__number{
+    font-weight: 700;
+    font-size: 48px;
+}
+.sobre-mi__anios__text{
+    font-weight: 500;
+}
+/* Sobre mi - Data */
+.sobre-mi__data{
+    width: 500px;
+}
+.sobre-mi__header{
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.sobre-mi__centence{
+    color: #CCCCCCaa;
+    font-weight: 700;
+    font-size: 72px;
+}
+.sobre-mi__title{
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    left: 38%;
+    top: 50%;
+}
+.sobre-mi__name{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.sobre-mi__desc{
+    line-height: 27px;
+    margin-bottom: 24px;
+}
+.sobre-mi__desc p{
+    margin-bottom: 16px;
+}
+.sobre-mi__social__list{
+    display: flex;
+    gap: 16px;
+}
+.sobre-mi__social__link{
+    font-size: 24px;
+}
+.sobre-mi__social__link i:hover{
+    transform: scale(1.2);
 }
