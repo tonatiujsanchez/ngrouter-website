@@ -48,3 +48,37 @@
         </div>
     </div>
 </section>
+
+<section class="proyectos">
+    <div class="bd-container">
+        <div class="proyectos__header">
+            <span class="proyectos__centence">Projects</span>
+            <h2 class="proyectos__title">Mis proyectos</h2>
+        </div>
+        <div class="proyectos__nav">
+            <ul class="proyectos__nav__list">
+                <li *ngFor="let categoria of categorias">
+                    <a class="proyectos__link" 
+                        [ngClass]="{ 'active': getClassActive( categoria.idc ) }"
+                        (click)="categoriaSelected( categoria.idc )">
+                        {{categoria.nombre}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="proyectos__container bd-grid">
+            <div *ngFor="let proyecto of proyectos" class="proyectos__content">
+                <div class="proyectos__img">
+                    <img src="../../../assets/img/portfolio/{{ proyecto.foto }}.jpg" alt="">
+                </div>
+                <div class="proyectos__info">
+                    <h3 class="proyectos__name">{{ proyecto.nombre }}</h3>
+                    <p class="proyectos__desc">{{ proyecto.desc }}</p>
+                    <div class="proyectos__action">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
