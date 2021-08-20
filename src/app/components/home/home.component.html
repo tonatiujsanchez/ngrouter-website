@@ -74,11 +74,10 @@
                 <div class="proyectos__info">
                     <h3 class="proyectos__name">{{ proyecto.nombre }}</h3>
                     <p class="proyectos__desc">{{ proyecto.desc }}</p>
-                    <div class="proyectos__action">
-                        
-                    </div>
+                    <a [routerLink]="['proyecto-details',proyecto.foto]" class="proyectos__detalles">Detalles<i class='bx bx-right-arrow-alt'></i></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<router-outlet></router-outlet>

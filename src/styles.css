@@ -74,3 +74,6 @@ img{
     padding: 16px 24px;
     cursor: pointer;
 }
+.fijar-body{
+    overflow: hidden;
+}

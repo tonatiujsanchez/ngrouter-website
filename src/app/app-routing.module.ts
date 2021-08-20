@@ -15,10 +15,15 @@ import { ExpertoComponent } from './components/experto/experto.component';
 import { ProyectosComponent } from './experto-detalles/proyectos/proyectos.component';
 import { ArticulosComponent } from './experto-detalles/articulos/articulos.component';
 import { ExperienciaComponent } from './experto-detalles/experiencia/experiencia.component';
+import { ProyectoDetailsComponent } from './components-generic/proyecto-details/proyecto-details.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: 'home', component: HomeComponent},
+  { path: 'home', component: HomeComponent,
+    children:[
+      { path: 'proyecto-details/:idProyecto', component: ProyectoDetailsComponent },
+    ]
+  },
   { path: 'info', component: InfoComponent},
   { path: 'experto/:idExperto', component: ExpertoComponent,
     children:[

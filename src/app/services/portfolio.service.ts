@@ -113,6 +113,9 @@ export class PortfolioService {
     }
   }
 
+  getProyecto( idFoto: string ): Portfolio{
+    return this.proyectos.filter( proyecto => proyecto.foto == idFoto )[0];
+  }
 
 
 }

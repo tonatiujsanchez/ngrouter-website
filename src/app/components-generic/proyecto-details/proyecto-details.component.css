@@ -1,0 +1,21 @@
+.proyecto{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10;
+    overflow: auto;
+}
+.proyecto__container{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #FFF;
+    width: 100%;
+    min-height: 2000px;
+}
+.proyecto__hero{
+    
+    height: 600px;
+}
