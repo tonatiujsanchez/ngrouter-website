@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     z-index: 10;
     overflow: auto;
 }
@@ -16,6 +16,18 @@
     min-height: 2000px;
 }
 .proyecto__hero{
-    
     height: 600px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proyecto__header{
+    text-align: center;
+    color: #FFF;
+}
+.proyecto__name{
+    text-transform: uppercase;
+    margin-bottom: 16px;
 }

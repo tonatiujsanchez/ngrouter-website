@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PortfolioService } from '../../services/portfolio.service';
 import { Portfolio } from '../../interfaces/portfolio.interface';
@@ -8,9 +8,13 @@ import { Portfolio } from '../../interfaces/portfolio.interface';
   templateUrl: './proyecto-details.component.html',
   styleUrls: ['./proyecto-details.component.css']
 })
-export class ProyectoDetailsComponent implements OnInit {
-
+export class ProyectoDetailsComponent implements OnInit, OnDestroy {
+  body = document.querySelector('body');
   proyecto!:Portfolio;
+
+  get bgHero():string{
+    return `linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../../../assets/img/portfolio/${this.proyecto.foto}.jpg')`;
+  }
   constructor( private activatedRoute: ActivatedRoute,  
                 private portfolioService: PortfolioService ) {
 
@@ -21,7 +25,10 @@ export class ProyectoDetailsComponent implements OnInit {
       });
     }
     
-    ngOnInit(): void {
+  ngOnInit(): void {
+    this.body?.classList.add('fijar-body');
   }
-
+  ngOnDestroy(): void{
+    this.body?.classList.remove('fijar-body');
+  }
 }

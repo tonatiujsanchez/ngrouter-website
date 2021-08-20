@@ -1,7 +1,10 @@
 <div class="proyecto">
     <div class="proyecto__container">
-        <div class="proyecto__hero" [ngStyle]="{'background': 'url(../../../assets/img/portfolio/{{ proyecto.foto }}.jpg)'}">
-            <!-- <img src="../../../assets/img/portfolio/{{ proyecto.foto }}.jpg" alt=""> -->
+        <div class="proyecto__hero" [ngStyle]="{'background-image': bgHero}">
+            <div class="proyecto__header">
+                <h1 class="proyecto__name">{{ proyecto.nombre }}</h1>
+                <p class="proyecto__desc">{{ proyecto.desc }}</p>
+            </div>
         </div>
         <div class="proyecto__content">
             <section class="bd-container">
