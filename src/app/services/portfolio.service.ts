@@ -32,19 +32,19 @@ export class PortfolioService {
   private proyectos:Portfolio[]  = [
     {
       nombre: 'Project Title',
-      desc: 'Lorem ipsum dolor sit amet consectetur.',
+      desc: 'Lorem ipsum amet consectetur.',
       foto: 'porfolio-101',
       categoria: 'c01'
     },
     {
       nombre: 'Project Title',
-      desc: 'Lorem ipsum dolor sit amet consectetur.',
+      desc: 'Lorem ipsum sit consectetur.',
       foto: 'porfolio-102',
       categoria: 'c02'
     },
     {
       nombre: 'Project Title',
-      desc: 'Adipisicing elit. Odit sequi lorem ipsum.',
+      desc: 'Adipisicing elit. Odit sequi.',
       foto: 'porfolio-103',
       categoria: 'c01'
     },
@@ -62,7 +62,7 @@ export class PortfolioService {
     },
     {
       nombre: 'Project Title',
-      desc: 'Odit sequi vel sapiente a dignissimos.',
+      desc: 'Odit sequi vel a dignissimos.',
       foto: 'porfolio-106',
       categoria: 'c02'
     },
@@ -74,19 +74,19 @@ export class PortfolioService {
     },
     {
       nombre: 'Project Title',
-      desc: 'Sequi vel sapiente dolores a dignissimos.',
+      desc: 'Sequi vel sapiente a dignissimos.',
       foto: 'porfolio-108',
       categoria: 'c03'
     },
     {
       nombre: 'Project Title',
-      desc: 'Sit amet consectetur adipisicing elit.',
+      desc: 'Sit amet consectetur elit.',
       foto: 'porfolio-109',
       categoria: 'c04'
     },
     {
       nombre: 'Project Title',
-      desc: 'Lorem ipsum a dignissimos repellat.',
+      desc: 'Lorem ipsum dignissimos repellat.',
       foto: 'porfolio-110',
       categoria: 'c04'
     },

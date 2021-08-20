@@ -1,3 +1,37 @@
+/* === ==== Bases === ==== */
+.section__header{
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section__centence{
+    color: #CCCCCCaa;
+    font-weight: 700;
+    font-size: 72px;
+    text-align: center;
+}
+.section__title{
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
+.section__desc{
+    text-align: center;
+    color: #777;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+
+/* === === Hero === === */
 .home__hero{
     background: url('../../../assets/img/hero-home-bg.jpg');
     height: 570px;
@@ -41,7 +75,8 @@
     font-weight: 500;
     font-size: 17px;
 }
-/* SOBRE MI */
+
+/* === === Sobre mi === === */
 .sobre-mi{
     display: flex;
     justify-content: center;
@@ -117,7 +152,9 @@
     font-weight: 700;
     text-align: center;
     font-size: 32px;
-    left: 38%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
     top: 50%;
 }
 .sobre-mi__name{
@@ -143,9 +180,9 @@
     transform: scale(1.2);
 }
 
+
 /* === === Proyectos === === */
 .proyectos{
-    margin-bottom: 120px;
     background-color: #F8F8F8;
     padding: 120px 0;
 }
@@ -165,7 +202,9 @@
     font-weight: 700;
     text-align: center;
     font-size: 32px;
-    left: 39%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
     top: 50%;
 }
 .proyectos__nav__list{
@@ -234,11 +273,11 @@
     transition: .8s opacity;
 }
 .proyectos__desc{
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     opacity: 0;
     transition: .8s opacity;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .proyectos__detalles{
@@ -254,5 +293,108 @@
 }
 .proyectos__detalles i{
     font-size: 16px;
+    vertical-align: middle;
+}
+
+
+/* === === === === Entradas === === === === */
+.entradas{
+    margin: 120px 0;
+}
+.entradas__container{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 60px;
+}
+.entradas__content{
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+}
+.entradas__img{
+    max-height: 200px;
+    overflow: hidden;
+}
+.entradas__data{
+    padding: 16px;
+}
+.entradas__title{
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.entradas__metadata{
+    font-weight: 400;
+    color: #777;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.entradas__metadata__item:first-child{
+    margin-left: 0;
+}
+.entradas__metadata__item {
+    margin: 0 5px;
+}
+.entradas__desc{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.entradas__ver{
+    font-weight: 500;
+    cursor: pointer;
+}
+.entradas__ver:hover{
+    font-weight: 700;
+}
+.entradas__ver:hover i{
+    font-weight: 700;
+}
+.entradas__ver i{
+    vertical-align: middle;
+}
+
+
+/* === === === === Contactame === === === === */
+.contactame{
+    background-color: #F8F8F8;
+    padding: 120px 0;
+}
+.contactame__social{
+    margin-bottom: 40px;
+}
+.contactame__list{
+    display: flex;
+    justify-content: center;
+}
+.contactame__item:last-child .contactame__link {
+    border-right: none;
+}
+.contactame__link{
+    font-size: 24px;
+    color: #777;
+    padding: 0 24px;
+    border-right: 1px solid rgba(119, 119, 119, .2);
+}
+.contactame__link i{
+    transition: .2s transform;
+}
+.contactame__link i:hover{
+    color: #333;
+    transform: scale(1.2);
+}
+.contactame__action{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+.contactame__action:hover{
+    font-weight: 700;
+}
+.contactame__action:hover i{
+    font-weight: 700;
+}
+.contactame__action i{
     vertical-align: middle;
 }

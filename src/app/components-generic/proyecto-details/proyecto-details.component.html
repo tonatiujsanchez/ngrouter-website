@@ -1,6 +1,7 @@
 <div class="proyecto">
     <div class="proyecto__container">
         <div class="proyecto__hero" [ngStyle]="{'background-image': bgHero}">
+            <a (click)="regresar()" class="proyecto__btn-back"><i class='bx bx-arrow-back' ></i></a>
             <div class="proyecto__header">
                 <h1 class="proyecto__name">{{ proyecto.nombre }}</h1>
                 <p class="proyecto__desc">{{ proyecto.desc }}</p>

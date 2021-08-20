@@ -17,19 +17,17 @@ export class HomeComponent implements OnInit {
 
   constructor( private portfolioService: PortfolioService,
                 private router: Router,
-                 private activatedRoute: ActivatedRoute  ) {
+                private activatedRoute: ActivatedRoute  ) {
     this.categorias = this.portfolioService.allCategorias;
    }
 
   ngOnInit(): void {
     this.proyectos = this.portfolioService.getProyectos( this.categoriaActiva );
-    
   }
 
   getClassActive( idc:string ):boolean{
     return this.categoriaActiva === idc;
   }
-
 
   categoriaSelected( idc: string ){
     if( this.categoriaActiva ===  idc ){
@@ -42,6 +40,9 @@ export class HomeComponent implements OnInit {
 
   verProyecto( idFoto:string ){
     this.router.navigate(['proyecto-details', idFoto], {relativeTo: this.activatedRoute});
+  }
+  verEntrada( idEntrada:number ){
+    this.router.navigate(['/blog', idEntrada]);
   }
 
 }

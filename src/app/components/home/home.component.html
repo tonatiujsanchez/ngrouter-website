@@ -1,3 +1,4 @@
+<!-- === === Hero === === -->
 <section class="home__hero">
     <div class="home__hero__container bd-container">
         <div class="home__hero__img">
@@ -14,6 +15,7 @@
         </div>
     </div>
 </section>
+<!-- === === Sobre Mi === === -->
 <section class="section sobre-mi">
     <div class="sobre-mi__img__container">
         <div class="sobre-mi__triangulo"></div>
@@ -48,7 +50,7 @@
         </div>
     </div>
 </section>
-
+<!-- === === Proyectos === === -->
 <section class="proyectos">
     <div class="bd-container">
         <div class="proyectos__header">
@@ -81,3 +83,101 @@
     </div>
 </section>
 <router-outlet></router-outlet>
+<!-- === === Entradas de Blog === === -->
+<section class="entradas">
+    <div class="bd-container">
+        <div class="section__header">
+            <span class="section__centence">Blog</span>
+            <h2 class="section__title">Últimas entradas</h2>
+        </div>
+        <p class="section__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora veritatis nemo aut ea iusto eos est expedita, quas ab adipisci.</p>
+        <div class="entradas__container bd-grid">
+            <div class="entradas__content">
+                <div class="entradas__img">
+                    <img src="../../../assets/img/post-101.jpg" alt="foto de entrada de blog">
+                </div>
+                <div class="entradas__data">
+                    <p class="entradas__title">Como aprender desarrollo web</p>
+                    <div class="entradas__metadata">
+                        <span class="entradas__metadata__item entradas__metadata__autor">Herman Fisher</span> - <span class="entradas__metadata__item  entradas__metadata__fecha">20 JAN, 2070</span> -  <span class="entradas__metadata__item  entradas__metadata__categoria">Design</span>
+                    </div>
+                    <p class="entradas__desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum soluta odit aperiam voluptas corrupti doloribus suscipit eveniet recusandae non molestias dolorem officiis asperiores animi culpa, obcaecati.
+                    </p>
+                    <a (click)="verEntrada(101)" class="entradas__ver">Leer más <i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+            </div>
+            <div class="entradas__content">
+                <div class="entradas__img">
+                    <img src="../../../assets/img/post-102.jpg" alt="foto de entrada de blog">
+                </div>
+                <div class="entradas__data">
+                    <p class="entradas__title">Ordena tus ideas y termina tus proyectos</p>
+                    <div class="entradas__metadata">
+                        <span class="entradas__metadata__autor">Herman Fisher</span> - <span class="entradas__metadata__fecha">20 JAN, 2070</span> -  <span class="entradas__metadata__categoria">Design</span>
+                    </div>
+                    <p class="entradas__desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum soluta odit aperiam voluptas corrupti doloribus suscipit eveniet recusandae non molestias dolorem officiis asperiores animi culpa, obcaecati.
+                    </p>
+                    <a (click)="verEntrada(102)" class="entradas__ver">Leer más <i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+            </div>
+            <div class="entradas__content">
+                <div class="entradas__img">
+                    <img src="../../../assets/img/post-105.jpg" alt="foto de entrada de blog">
+                </div>
+                <div class="entradas__data">
+                    <p class="entradas__title">2021 el año de la innovación</p>
+                    <div class="entradas__metadata">
+                        <span class="entradas__metadata__autor">Herman Fisher</span> - <span class="entradas__metadata__fecha">20 JAN, 2070</span> -  <span class="entradas__metadata__categoria">Design</span>
+                    </div>
+                    <p class="entradas__desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum soluta odit aperiam voluptas corrupti doloribus suscipit eveniet recusandae non molestias dolorem officiis asperiores animi culpa, obcaecati.
+                    </p>
+                    <a (click)="verEntrada(105)" class="entradas__ver">Leer más <i class='bx bx-right-arrow-alt' ></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- === === Contactame === === -->
+<section class="contactame">
+    <div class="contactame__container bd-container">
+        <div class="section__header">
+            <span class="section__centence">Contact</span>
+            <h2 class="section__title">Trabajemos juntos</h2>
+        </div>
+        <p class="section__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora veritatis nemo aut ea iusto eos est expedita, quas ab adipisci.</p>
+        <div class="contactame__social">
+            <ul class="contactame__list">
+                <li class="contactame__item">
+                    <a href="#" class="contactame__link">
+                        <i class='bx bxl-linkedin' ></i>
+                    </a>
+                </li>
+                <li class="contactame__item">
+                    <a href="#" class="contactame__link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                </li>
+                <li class="contactame__item">
+                    <a href="#" class="contactame__link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </li>
+                <li class="contactame__item">
+                    <a href="#" class="contactame__link">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                </li>
+                <li class="contactame__item">
+                    <a href="#" class="contactame__link">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a routerLink="/contact" class="contactame__action">
+            Contactame<i class='bx bx-right-arrow-alt' ></i></a>
+    </div>
+</section>
